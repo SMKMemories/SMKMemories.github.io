@@ -1,0 +1,74 @@
+/* Styling for photo gallery */
+.photo-gallery {
+    padding: 40px;
+    background-image: url('DreamShaper\ woman.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* ... Styling for photo gallery .. */
+
+.gallery-section {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #f52d79c4; /* Add a background color */
+    padding: 10px; /* Add some padding around the title */
+}
+
+.gallery-section h2 {
+    font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 10px;
+    background-color: #0b0c0cbe; /* Add a different background color to the title */
+    color: white; /* Set the text color for better visibility */
+    padding: 5px 10px;/* Add padding to the title to separate from the background */
+    margin: 0;
+    border-top-left-radius: 10px; /* Add border radius to top left corner */
+    border-top-right-radius: 10px;
+}
+
+/* ... Rest of the CSS ... */
+
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px; /* Add border radius to create curved edges */
+    margin-top: 10px; 
+}
+
+/* Styling for full-screen image overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+/* Styling for responsive layout */
+@media screen and (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
