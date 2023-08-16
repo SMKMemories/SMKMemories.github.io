@@ -6,7 +6,7 @@
 }
 
 .profile-header h1 {
-    font-size: 24px;
+    font-size: 15px;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -16,10 +16,11 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    background-color: darkslategrey;
 }
 
 .profile {
-    background-color: whitesmoke;
+    background-color: rgb(163, 163, 163);
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
