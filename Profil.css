@@ -3,6 +3,8 @@
     text-align: center;
     padding: 10px;
     background-color: #948787;
+    margin-bottom: 15px;
+    border-radius: 18px;
 }
 
 .profile-header h1 {
@@ -17,10 +19,11 @@
     justify-content: center;
     padding: 20px;
     background-color: darkslategrey;
+    border-radius: 10px;
 }
 
 .profile {
-    background-color: rgb(163, 163, 163);
+    background-color: whitesmoke;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
