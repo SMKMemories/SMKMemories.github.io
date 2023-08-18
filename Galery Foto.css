@@ -7,6 +7,8 @@
     background-position: center top;
     background-attachment: fixed;
     min-height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px
 }
 
 /* ... Styling for photo gallery .. */
@@ -67,8 +69,8 @@
 }
 
 /* Styling for responsive layout */
-@media screen and (max-width: 768px) {
+@media (max-width: 500px) {
     .image-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
     }
-}
+  }
